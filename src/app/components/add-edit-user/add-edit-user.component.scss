@@ -1,0 +1,49 @@
+.add-users {
+  .header-section {
+    background: #303e4c;
+    color: white;
+
+    .title {
+      font-size: 24px;
+      padding: 24px;
+    }
+
+    .form {
+      margin-top: 30px;
+      display: flex;
+
+      .custom-input {
+        margin-right: 20px;
+        font-size: 12px;
+      }
+
+      .left-side, .right-side {
+        padding-left: 24px;
+      }
+
+      .save-button {
+        border-radius: 8px;
+        color: white;
+        background: #02aff0;
+        outline: none;
+        box-shadow: none;
+        height: 43px;
+        border: none;
+        padding: 0 24px;
+        margin-left: 24px;
+        cursor: pointer;
+        margin-bottom: 24px;
+
+        &:hover, &:focus {
+          background: #037fa8;
+        }
+
+        &:disabled {
+          background: #707070;
+          pointer-events: none;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+}

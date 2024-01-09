@@ -1,0 +1,129 @@
+.side-menu {
+  background: #303e4c;
+  height: 100%;
+
+  .first-section {
+    background: #1e2833;
+    border-radius: 0 0 70px 0;
+    position: relative;
+
+    .header {
+      padding: 24px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .company {
+        display: flex;
+        align-items: center;
+
+        .logo {
+          display: flex;
+          flex-direction: column;
+          margin-right: 4px;
+
+          .top, .bottom {
+            display: flex;
+            flex-direction: row;
+          }
+
+          .rec-1, .rec-2, .rec-3, .rec-4 {
+            width: 10px;
+            height: 11px;
+            margin: 2px;
+          }
+
+          .rec-1 {
+            background: #528713;
+            border-radius: 0 0 6px 0;
+          }
+
+          .rec-2 {
+            background: #839408;
+            border-radius: 0 0 0 6px;
+          }
+
+          .rec-3 {
+            background: #b33507;
+            border-radius: 0 6px 0 0;
+          }
+
+          .rec-4 {
+            background: #148f98;
+            border-radius: 6px 0 0 0;
+          }
+        }
+
+        .name {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .user {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+      margin-top: -9px;
+
+      .user-name {
+        font-size: 16px;
+      }
+
+      .user-email {
+        font-size: 12px;
+        margin-top: -15px;
+        padding-bottom: 40px;
+      }
+
+      .user-pic {
+        position: absolute;
+        bottom: -40px;
+
+        img {
+          width: 67px;
+          border-radius: 50%;
+          border: 2px solid #3e9b62;
+        }
+      }
+    }
+  }
+
+  .second-section {
+
+    .title {
+      padding: 30px;
+      margin-top: 24px;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: bold;
+      color: #9ca2a9;
+    }
+
+    .menu {
+      margin-top: -24px;
+      .menu-item {
+        margin-bottom: 5px;
+        padding: 10px 30px;
+        margin-right: 15px;
+        font-size: 14px;
+        cursor: pointer;
+
+        .mat-icon {
+          margin-right: 10px;
+        }
+
+        color: white;
+        display: flex;
+        align-items: center;
+
+        &.active {
+          background: #02aff0;
+          border-radius: 0 20px 20px 0;
+        }
+      }
+    }
+  }
+}

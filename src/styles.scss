@@ -1,0 +1,54 @@
+/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+@import 'ngx-toastr/toastr';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Roboto', sans-serif; }
+
+mat-sidenav {
+  width: 322px;
+}
+
+p {
+  font-size: 14px;
+}
+
+.custom-input {
+  font-size: 12px;
+}
+
+
+.mat-mdc-row:nth-child(even){
+  background-color: white;
+}
+
+.mat-mdc-row:nth-child(odd){
+  background-color: #f7f9fb;
+}
+
+.mat-mdc-header-cell {
+  border-bottom: 2px solid #02aff0 !important;
+  color: #5D747D;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@include mat.form-field-density(-3);
+
+.mat-mdc-form-field .mat-mdc-floating-label.mdc-floating-label {
+  display: block;
+  font-size: 12px;
+}
+
+.mat-mdc-form-field-input-control.mat-mdc-form-field-input-control {
+  font-size: 12px;
+}
+
+.mat-mdc-select-arrow svg {
+  margin-top: 8px;
+}
+
+.mat-mdc-select-value-text {
+  font-size: 12px;
+}

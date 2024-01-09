@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": "123",
+      "fullName": "Szymon",
+      "role": "Użytkownik",
+      "status": "Nieaktywny",
+      "lp": 3
+    },
+    {
+      "id": "12312",
+      "fullName": "dwadaw",
+      "role": "Administrator",
+      "status": "Nieaktywny",
+      "lp": 4
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "name": "Administrator"
+    },
+    {
+      "id": 2,
+      "name": "Użytkownik"
+    },
+    {
+      "id": 3,
+      "name": "Operator"
+    }
+  ]
+}

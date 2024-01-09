@@ -1,0 +1,40 @@
+<div class="add-users">
+<div class="header-section">
+  <div class="title">
+    {{router.url.includes('edit') ? 'Edytuj użytkownika' : 'Dodaj użytkownika' }}
+  </div>
+
+  <div class="form">
+    <form [formGroup]="form">
+      <div class="left-side">
+        <mat-form-field class="custom-input">
+          <mat-label>Id</mat-label>
+          <input type="number" matInput formControlName="id">
+        </mat-form-field>
+        <mat-form-field class="custom-input">
+          <mat-label>Imię i nazwisko</mat-label>
+          <input type="text" matInput formControlName="fullName">
+        </mat-form-field>
+      </div>
+
+      <div class="right-side">
+        <mat-form-field class="custom-input">
+          <mat-label>Rola</mat-label>
+          <mat-select formControlName="role">
+            <mat-option *ngFor="let roleValue of (roles$ | async)" [value]="roleValue?.name">{{roleValue?.name}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field class="custom-input">
+          <mat-label>Status</mat-label>
+          <mat-select formControlName="status">
+            <mat-option value="Nieaktywny">Nieaktywny</mat-option>
+            <mat-option value="Aktywny">Aktywny</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <button (click)="router.url.includes('edit') ? edit() : save()" [disabled]="form.invalid" class="save-button">Zapisz</button>
+    </form>
+  </div>
+</div>
+</div>

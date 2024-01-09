@@ -1,0 +1,38 @@
+.app-header {
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  .flag {
+    margin-right: 40px;
+
+    img {
+      width: 48px;
+    }
+
+    &:after {
+      display: block;
+      content: "";
+      height: 40px;
+      width: 2px;
+      background: #707070;
+      position: absolute;
+      right: 95px;
+      top: 17px;
+    }
+  }
+}
+
+.mat-icon {
+  color: #707070;
+  cursor: pointer;
+}
+
+.home-icon {
+  margin-right: 10px;
+}
+
+.setting-icon {
+  padding-right: 24px;
+}
